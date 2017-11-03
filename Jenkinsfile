@@ -16,7 +16,7 @@ node {
 
   input 'Publish?'
   stage 'Publish'
-  withCredentials([usernamePassword(credentialsId: '56666fc2-42cb-48e9-993d-266940d05433', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+  withCredentials([usernamePassword(credentialsId: 'jorans-github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
     sh "echo env.GIT_USERNAME:${env.GIT_USERNAME} GIT_USERNAME:${GIT_USERNAME}"
     sh "git push https://$GIT_USERNAME:$GIT_PASSWORD@github.com/uppsala-university/sample-project.git ${pom.artifactId}-${version}"
   }
