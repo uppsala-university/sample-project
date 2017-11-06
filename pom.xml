@@ -3,14 +3,14 @@
   <groupId>test</groupId>
   <artifactId>test-simple-app</artifactId>
   <packaging>jar</packaging>
-  <version>1.2-SNAPSHOT</version>
+  <version>0.0.1</version>
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>
   <scm>
     <connection>scm:git:https://github.com/uppsala-university/sample-project.git</connection>
     <developerConnection>scm:git:https://github.com/uppsala-university/sample-project.git</developerConnection>
     <url>https://github.com/uppsala-university/sample-project.git</url>
-    <tag>HEAD</tag>
+    <tag>test-simple-app-0.0.1</tag>
   </scm>
 
   <distributionManagement>
